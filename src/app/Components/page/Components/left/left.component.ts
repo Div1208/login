@@ -1,0 +1,25 @@
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+
+@Component({
+  selector: 'app-left',
+  templateUrl: './left.component.html',
+  styleUrls: ['./left.component.css']
+})
+export class LeftComponent implements OnInit {
+  inpObj={
+    name:"",
+    number:"",
+    email:"",
+    uname:"",
+    psw:""
+  }
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+  @Output() resObj = new EventEmitter<any>();
+  showResult(){
+    this.resObj.emit(this.inpObj);
+  }
+
+}

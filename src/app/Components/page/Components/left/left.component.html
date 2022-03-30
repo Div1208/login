@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	
+</style>
+</head>
+<body>
+	<form action="action.php">
+		<h1>LOGIN</h1>
+		<hr>
+		
+		<label for="name"><b>NAME</b></label>
+		<input type="text" placeholder="Enter Your Name" id="name" name="name" required value='' [(ngModel)]="inpObj.name"><br>
+		
+		<label for="number"><b>PHONE NUMBER</b></label>
+		<input type="text" placeholder="Enter Your Phone No" id="number" name="number" required value='' [(ngModel)]="inpObj.number"><br>
+		
+		<label for="email"><b>EMAIL</b></label> 
+		<input type="text" placeholder="Enter Your E-mail" id="Email" name="email" required value='' [(ngModel)]="inpObj.email"><br>
+        
+		<label for="uname"><b>USERNAME</b></label>
+        <input type="text" placeholder="Enter Username" id="uname"  name="uname" required value ='' [(ngModel)]="inpObj.uname"><br>
+
+        <label for="psw"><b>PASSWORD</b></label>
+        <input type="password" placeholder="Enter Password" id="psw" name="psw" required value ='' [(ngModel)]="inpObj.psw"><br>
+
+		<hr>
+	
+		<button type="submit" value="Submit" class="btn-submit" (click)="showResult()">LOGIN</button>
+		
+  
+		
+		
+	</form>
+
+
+</body>
+</html>
